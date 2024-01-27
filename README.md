@@ -1,2 +1,2 @@
-# speechtotext-Hindi
- upload any length of hindi audio file (only .wav) and get the captions
+This program asks user to upload a wav audio file (hindi) and transcribe it into hindi text on page and also save a text file output.txt
+any length file can be transcribed. it slipts the file into small chunks and concatenate transcribed text. 

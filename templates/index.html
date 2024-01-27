@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Audio to Text Converter</title>
+</head>
+<body>
+    <h1>Hindi Audio (only .wav) to Text Converter</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="audio_file" accept=".wav">
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if transcribed_text %}
+        <h2>Transcribed Text:</h2>
+        <p>{{ transcribed_text }}</p>
+    {% endif %}
+</body>
+</html>
